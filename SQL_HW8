@@ -1,0 +1,44 @@
+CREATE TABLE employee (
+	id INTEGER PRIMARY KEY,
+	name VARCHAR(50) NOT NULL,
+	birthday DATE ,
+	email VARCHAR(50)
+);
+SELECT * FROM employee;
+insert into employee (id, name, birthday, email) values (1, 'Issiah', '2011/11/02', 'ikornousek0@go.com'); --50 satırdan 1 örnek
+SELECT * FROM employee;
+UPDATE employee
+SET name = 'Enzel',
+	birthday = '1997-07-10',
+	email = 'enzel@eryilmaz.com'
+WHERE id= 1;
+UPDATE employee
+SET name = 'Ahmet',
+	birthday = '1990-10-23',
+	email = 'ahmet@kaymaz.com'
+WHERE id= 2;
+UPDATE employee
+SET name = 'Mehmet',
+	birthday = '1980-11-13',
+	email = 'mehmet@durmaz.com'
+WHERE id= 3;
+UPDATE employee
+SET name = 'Eslem',
+	birthday = '2003-10-12',
+	email = 'eslem@eryılmaz.com'
+WHERE id= 4;
+UPDATE employee
+SET name = 'Mehmet',
+	birthday = '1980-11-13',
+	email = 'mehmet@durmaz.com'
+WHERE id= 13;
+DELETE FROM employee
+WHERE id = 6;
+DELETE FROM employee
+WHERE id = 7;
+DELETE FROM employee
+WHERE id = 8;
+DELETE FROM employee
+WHERE id = 9;
+DELETE FROM employee
+WHERE id = 10;
